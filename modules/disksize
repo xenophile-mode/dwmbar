@@ -1,13 +1,18 @@
 #!/bin/bash
 
-# Prints out the total disk memory and the availeable memory
+# Prints out the total disk memory and the available memory
 
 PREFIX=' '
 
 get_disk()
 {
-    TOTAL_SIZE=$( df -h --total | tail -1 | awk {'printf $2'})
-    USED_SIZE=$(df -h --total | tail -1 | awk {'printf $3'})
+	# Only calculates disk size of real devices
+	TOTAL_SIZE=$(df "$@" | grep -E '^/' | awk '{split($0, a, " +"); sum += a[2]} END {printf("%0.1fG\n", sum/1000000)}')
+	USED_SIZE=$(df "$@" | grep -E '^/' | awk '{split($0, a, " +"); sum += a[3]} END {printf("%0.1fG\n", sum/1000000)}')
+
+	# OLD COMMANDS. COMMENT THESE IN AND NEW ONES OUT TO REVERT BACK.
+    # TOTAL_SIZE=$( df -h --total | tail -1 | awk {'printf $2'})
+    # USED_SIZE=$(df -h --total | tail -1 | awk {'printf $3'})
     PERCENTAGE=$(df -h --total | tail -1 | awk {'printf $5'})
 
     echo "$PREFIX$USED_SIZE/$TOTAL_SIZE ($PERCENTAGE)"
