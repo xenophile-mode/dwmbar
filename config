@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # What modules, in what order
-MODULES="weather volumebar wifi internet cpuload cputemp date time"
+MODULES="archupdates kernel publicip networkuptraffic networkdowntraffic ram disksize cpuload cputemp date time"
 
 # Modules that require an active internet connection
 ONLINE_MODULES="weather internet"
@@ -13,8 +13,8 @@ DELAY="0.05"
 CUSTOM_DIR="/home/$USER/.config/dwmbar/modules/custom/"
 
 # Separator between modules
-SEPARATOR=" | "
+SEPARATOR="|"
 
 # Padding at the end and beggining of the status bar
-RIGHT_PADDING=" "
-LEFT_PADDING=" "
+#RIGHT_PADDING=" "
+#LEFT_PADDING=" "

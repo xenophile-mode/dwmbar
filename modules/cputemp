@@ -3,8 +3,8 @@
 # Gets temperature of the CPU
 # Dependencies: lm_sensors
 
-PREFIX=' '
-FIRE=' '
+PREFIX='cpu:'
+
 
 WARNING_LEVEL=80
 
@@ -14,11 +14,6 @@ get_cputemp()
 	# CPU_TEMP=$(expr $CPU_T / 1000)
 
 	CPU_TEMP="$(sensors | grep temp1 | awk 'NR==1{gsub("+", " "); gsub("\\..", " "); print $2}')"
-
-	if [ "$CPU_TEMP" -ge $WARNING_LEVEL ]; then
-		PREFIX="$FIRE$PREFIX"
-	fi
-
 	echo "$PREFIX$CPU_TEMP°C"
 }
 

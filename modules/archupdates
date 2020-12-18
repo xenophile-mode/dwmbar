@@ -5,7 +5,7 @@
 # Depends on yay and checkupdates (pacman-contrib)
 # Optional: add --devel flag to the yay cmd to check for *-git package updates.
 
-PREFIX='  Updates: '
+PREFIX='Updates:'
 
 get_updates()
 {

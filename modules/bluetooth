@@ -2,8 +2,8 @@
 
 # Prints out the bluetooth status
 
-BLUETOOTH_ON_ICON=''
-BLUETOOTH_OFF_ICON=''
+BLUETOOTH_ON_ICON='bt:on'
+BLUETOOTH_OFF_ICON='bt:off'
 
 get_bluetooth()
 {
@@ -14,7 +14,7 @@ get_bluetooth()
         echo "$BLUETOOTH_ON_ICON"
     else
         :
-        #echo "$BLUETOOTH_OFF_ICON"
+        echo "$BLUETOOTH_OFF_ICON"
     fi
 }
 

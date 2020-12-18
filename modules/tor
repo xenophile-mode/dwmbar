@@ -3,8 +3,8 @@
 # Prints if the tor service is enabled or not
 # Requires tor
 
-TOR_ENABLED='ﴣ'
-TOR_DISABLED=''
+TOR_ENABLED='tor:on'
+TOR_DISABLED='tor:off'
 
 get_tor()
 {
@@ -15,7 +15,7 @@ get_tor()
             echo "$TOR_ENABLED"
         else
  	    :
-            #echo "$TOR_DISABLED"
+            echo "$TOR_DISABLED"
         fi
 
 }

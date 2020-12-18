@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PREFIX_PLAY=' '
-PREFIX_PAUSE=' '
+PREFIX_PLAY='play'
+PREFIX_PAUSE='pause'
 
 get_mpd()
 {

@@ -2,7 +2,7 @@
 
 # Prints out if there is an ethernet cable connected
 
-ETHERNET_ICON=''
+ETHERNET_ICON='eth'
 
 get_ethernet()
 {

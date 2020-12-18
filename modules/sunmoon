@@ -3,8 +3,8 @@
 # Outputs sun if its daytime and moon if its nighttime
 # Requires the redshift package
 
-SUN_ICON='盛'
-MOON_ICON=''
+SUN_ICON='day'
+MOON_ICON='night'
 
 get_sunmoon()
 {

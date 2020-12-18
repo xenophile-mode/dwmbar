@@ -2,7 +2,7 @@
 
 # Prints out the current up network traffic in MB
 
-PREFIX=' '
+PREFIX='up:'
 
 get_up_traffic()
 {

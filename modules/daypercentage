@@ -2,7 +2,7 @@
 
 # Prints the percentage of the day that has been completed
 
-PREFIX=' '
+PREFIX='day:'
 
 get_daypercentage()
 {

@@ -2,7 +2,7 @@
 
 # Prints the number of updates for Void Linux
 
-PREFIX=' Updates: '
+PREFIX='Updates:'
 
 get_updates()
 {

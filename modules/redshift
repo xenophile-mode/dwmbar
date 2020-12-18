@@ -3,7 +3,7 @@
 # Prints out the screen color temperature
 # Requires the redshift package
 
-PREFIX=''
+PREFIX='screen temp:'
 
 get_redshift()
 {

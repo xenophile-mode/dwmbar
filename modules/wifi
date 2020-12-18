@@ -2,9 +2,9 @@
 
 # Gets the wifi status
 
-WIFI_FULL_ICON=''
-WIFI_MID_ICON=''
-WIFI_LOW_ICON=''
+WIFI_FULL_ICON='wifi:strong'
+WIFI_MID_ICON='wifi:med'
+WIFI_LOW_ICON='wifi:poor'
 
 get_wifi() 
 {

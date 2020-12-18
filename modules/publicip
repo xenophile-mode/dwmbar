@@ -3,7 +3,7 @@
 # Prints out your public IP adress
 # Depends on curl
 
-PREFIX=' '
+PREFIX='ip:'
 
 get_pub_ip()
 {

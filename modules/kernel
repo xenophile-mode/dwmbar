@@ -2,11 +2,11 @@
 
 # Prints out the kernel version
 
-PREFIX=' '
+#PREFIX='kernel:'
 
 get_kernel()
 {
-    echo "$PREFIX$(uname -r)"
+    echo "$(uname -r)"
 }
 
 get_kernel

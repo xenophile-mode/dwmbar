@@ -5,8 +5,8 @@
 # Dependencies: bc
 
 VOLUME_WIDTH=9
-VOLUME_SLIDER='⬤'
-VOLUME_RAIL='◯'
+VOLUME_SLIDER='*'
+VOLUME_RAIL='-'
 VOLUME_MUTED='muted'
 
 PREFIX=''

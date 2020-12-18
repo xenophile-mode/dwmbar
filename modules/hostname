@@ -2,7 +2,7 @@
 
 # Prints USER@hostname
 
-PREFIX=' '
+PREFIX='host:'
 
 get_hostname()
 {

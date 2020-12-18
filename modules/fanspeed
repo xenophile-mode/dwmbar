@@ -3,7 +3,7 @@
 # Prints the fan RPM
 # Depends on lm_sensors
 
-PREFIX=' '
+PREFIX='fan:'
 
 get_fan_speed()
 {

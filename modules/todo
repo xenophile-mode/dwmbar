@@ -5,7 +5,7 @@
 
 TASKS_DIR="/home/$USER/.todo"
 TASKS_NAME="tasks"
-PREFIX=': '
+PREFIX='to do:'
 
 get_todo()
 {

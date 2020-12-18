@@ -3,11 +3,11 @@
 # Prints the backlight percentage
 # Requires the light package
 
-PREFIX='ﯧ'
+PREFIX='backlight:'
 
 get_backlight()
 {
-    echo "$PREFIX $(light | sed 's/\..*//g')%"
+    echo "$PREFIX$(light | sed 's/\..*//g')%"
 }
 
 get_backlight

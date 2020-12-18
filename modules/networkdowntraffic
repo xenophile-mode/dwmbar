@@ -2,7 +2,7 @@
 
 # Prints out the current down network traffic in MB
 
-PREFIX=' '
+PREFIX='down:'
 
 get_down_traffic()
 {

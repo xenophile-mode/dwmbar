@@ -2,8 +2,8 @@
 
 # Prints out the volume percentage
 
-VOLUME_ON_ICON=''
-VOLUME_MUTED_ICON=''
+VOLUME_ON_ICON='vol:'
+VOLUME_MUTED_ICON='vol:mute'
 
 get_volume(){
         active_sink=$(pacmd list-sinks | awk '/* index:/{print $3}')
@@ -12,9 +12,9 @@ get_volume(){
 
         if [ "${curStatus}" = 'yes' ]
         then
-            echo "$VOLUME_MUTED_ICON  $volume%"
+            echo "$VOLUME_MUTED_ICON"
         else
-            echo "$VOLUME_ON_ICON  $volume%"
+            echo "$VOLUME_ON_ICON$volume%"
         fi
 }
 
